@@ -1,6 +1,52 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const addAll = function(nums){
+  const allNumbers = [];
+  for(const allNums of nums){
+    allNumbers.push(nums.reduce(allNums));
+  }
+  console.log(allNumbers);
+  return allNumbers;
+}
+
+// function addAll(nums){
+//   let allNums = [];
+//   for(let allNums of nums){
+//     console.log(allNums)
+//   }
+// }
+const addAllss = addAll([5, 3, 7, -11, 1003]);
+// addAllss;
+
+const countSpaces = function(spaces){
+
+}
+
+const countTrues = function(count){
+
+}
+
+const makeFriendly = function(ends){
+
+}
+
+const cubeAll = function(nums){
+
+}
+
+const addNoises = function(){
+
+}
+
+const womenOnly = function(only){
+
+}
+
+const integersOnly = function(){
+
+}
+
 
 
 

@@ -1,27 +1,29 @@
 /******************
  * YOUR CODE HERE *
  ******************/
-const addAll = function(nums){
-  const allNumbers = [];
-  for(const allNums of nums){
-    allNumbers.push(nums.reduce(allNums));
+const addAll = function(arr){
+  let addAll = 0;
+  for(const number of arr){
+    addAll += number;
   }
-  console.log(allNumbers);
-  return allNumbers;
+  return addAll;
 }
+const result = addAll([5, 3, 7, -11, 1003]);
+result;
 
-// function addAll(nums){
-//   let allNums = [];
-//   for(let allNums of nums){
-//     console.log(allNums)
-//   }
-// }
-const addAllss = addAll([5, 3, 7, -11, 1003]);
-// addAllss;
 
-const countSpaces = function(spaces){
-
+const countSpaces = function(str){
+  let countSpaces = [];
+  for(const spaces of str){
+    countSpaces += spaces;    
+    
+  }
+  console.log(countSpaces)
+  return countSpaces.split(' ').length -1;
 }
+const result1 = countSpaces('well hello there my crumpet')
+result1;
+
 
 const countTrues = function(count){
 

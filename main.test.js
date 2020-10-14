@@ -29,29 +29,42 @@ const countTrues = function(count){
   for(const trues of count){
     // let str = toString(trues)
     // countTrues += trues;
-    countTrues = count.filter(Boolean).length;
+    cTru = count.filter(Boolean);
+    if(count !== true || count == String){
+      return countTrues = count.filter(Boolean).length
+    } else if(count === true){
+      return countTrues = count.filter(Boolean).length;
+    }
   }
-  return countTrues;
+  // return countTrues;
 }
 // const result2 = countTrues([true, true, true]);
 const result2 = countTrues([true, true, true, true, true]);
 result2;
 
 const makeFriendly = function(paragraph){
-  let makeFriendlies = [];
+  let makeFriendly = [];
   for(const friendly of paragraph){
-    makeFriendlies += friendly
-    makeFriendlies = makeFriendlies.replace('.', '!');
+    makeFriendly += friendly
+    makeFriendly = makeFriendly.replace('.', '!');
   }
-  console.log(makeFriendlies)
-  return makeFriendlies;
+  return makeFriendly;
 }
 const result3 = makeFriendly(`Do you see the story. Do you see anything. It seems to me I am trying to tell you a dream.`)
-makeFriendly;
+result3;
 
 const cubeAll = function(nums){
-
+  let cubeAll = [];
+  for(const all of nums){
+    cubeAll = all * 3;
+    // cubeAll.map(cube * 3)
+    // cubeAll = Math.cbrt(all * 1/3)
+    console.log(cubeAll)
+  }
+  return cubeAll;
 }
+const result4 = cubeAll([3, 2, 5]);
+result4;
 
 const addNoises = function(){
 

@@ -18,7 +18,6 @@ const countSpaces = function(str){
     countSpaces += spaces;    
     
   }
-  console.log(countSpaces)
   return countSpaces.split(' ').length -1;
 }
 const result1 = countSpaces('well hello there my crumpet')
@@ -38,9 +37,14 @@ const countTrues = function(count){
 const result2 = countTrues([true, true, true, true, true]);
 result2;
 
-const makeFriendly = function(ends){
-
+const makeFriendly = function(paragraph){
+  let makeFriendlies = [];
+  for(const friendly of paragraph){
+    makeFriendlies = makeFriendly.replace('.', '!') + paragraph;
+  }
+  return makeFriendlies;
 }
+const result3 = makeFriendly(`Do you see the story. Do you see anything. It seems to me I am trying to tell you a dream.`)
 
 const cubeAll = function(nums){
 

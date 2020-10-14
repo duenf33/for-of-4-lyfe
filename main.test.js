@@ -40,11 +40,14 @@ result2;
 const makeFriendly = function(paragraph){
   let makeFriendlies = [];
   for(const friendly of paragraph){
-    makeFriendlies = makeFriendly.replace('.', '!') + paragraph;
+    makeFriendlies += friendly
+    makeFriendlies = makeFriendlies.replace('.', '!');
   }
+  console.log(makeFriendlies)
   return makeFriendlies;
 }
 const result3 = makeFriendly(`Do you see the story. Do you see anything. It seems to me I am trying to tell you a dream.`)
+makeFriendly;
 
 const cubeAll = function(nums){
 

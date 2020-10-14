@@ -60,23 +60,48 @@ const cubeAll = function(nums){
     cubeAll = all * 3;
     // cubeAll.map(cube * 3)
     // cubeAll = Math.cbrt(all * 1/3)
-    console.log(cubeAll)
+    // console.log(cubeAll)
   }
   return cubeAll ;
 }
 const result4 = cubeAll([3, 2, 5]);
 result4;
 
-const addNoises = function(){
-
+const addNoises = function(str){
+let addNoises = [];
+  for(const noises of str){
+    addNoises += noises;
+  }
+  return addNoises;
 }
+const result5 = addNoises([
+  'Fido',
+  'Rolph',
+  'Maisie',
+])
+result5;
 
 const womenOnly = function(only){
-
+  let womenOnly = [];
+  for(const women of only){
+    womenOnly += women;
+  }
+  return womenOnly;
 }
+const result6 = womenOnly([
+  'Colin - M',
+  'Mesuara - F',
+  'Ginny - F',
+  'Anthony - M',
+])
+result6;
 
-const integersOnly = function(){
-
+const integersOnly = function(only){
+  const integerOnly = [];
+  for(const integer of only){
+    integerOnly += only;
+  }
+  return integerOnly;
 }
 
 

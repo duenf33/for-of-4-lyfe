@@ -26,8 +26,17 @@ result1;
 
 
 const countTrues = function(count){
-
+  let countTrues = [];
+  for(const trues of count){
+    // let str = toString(trues)
+    // countTrues += trues;
+    countTrues = count.filter(Boolean).length;
+  }
+  return countTrues;
 }
+// const result2 = countTrues([true, true, true]);
+const result2 = countTrues([true, true, true, true, true]);
+result2;
 
 const makeFriendly = function(ends){
 

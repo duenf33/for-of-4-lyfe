@@ -56,12 +56,13 @@ result3;
 const cubeAll = function(nums){
   let cubeAll = [];
   for(const all of nums){
+    // cubeAll += all;
     cubeAll = all * 3;
     // cubeAll.map(cube * 3)
     // cubeAll = Math.cbrt(all * 1/3)
     console.log(cubeAll)
   }
-  return cubeAll;
+  return cubeAll ;
 }
 const result4 = cubeAll([3, 2, 5]);
 result4;
